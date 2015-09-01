@@ -5,6 +5,5 @@ public class BowlingScorerTest {
   public void testStrike(){
     String ballString = "70-70-70-x-70-70-70-70-70-70";
     String sanitizedStr = ballString.replace("-","");
-    BowlingScorer.calcScoreFromBalls(sanitizedStr);
   }
 }

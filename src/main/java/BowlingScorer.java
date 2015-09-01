@@ -8,8 +8,8 @@ public class BowlingScorer {
 
     int ttlScore = 0;
     for (int i=0; i<frames.length; i++) {
-      System.out.println(String.format("Scoring frame %s", i+1));
       ttlScore += getScoreForFrame(frames, i);
+      System.out.println(String.format("Scoring frame %s: %s", i+1, ttlScore));
     }
 
     System.out.println(String.format("Final score: %s", ttlScore));
