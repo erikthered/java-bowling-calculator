@@ -2,7 +2,7 @@ public class BowlingScorer {
   public static void main(String... args) {
     if (args.length != 1) throw new RuntimeException("Wrong number of args");
 
-    String[] frames = args[0].split("-");
+    String[] frames = args[0].toLowerCase().split("-");
 
     if (frames.length != 10) throw new RuntimeException("Bad score string");
 
